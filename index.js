@@ -4,19 +4,19 @@
  *Author: Ahmed
  */
 
-// Dependencies
+// *Dependencies
 const http = require("http");
 const { handleReqRes } = require("./helpers/handleReqRes");
 const environment = require("./helpers/environments");
 const data = require("./lib/data.lib");
 
-// app object - module scaffolding
+// *app object - module scaffolding
 const app = {};
 
 // Testing file system
 // @TODO:
 
-// Create Server
+// *Create Server
 app.createServer = () => {
   const server = http.createServer(app.handleReqRes);
   server.listen(environment.port, () => {
@@ -24,8 +24,8 @@ app.createServer = () => {
   });
 };
 
-// Handle Requests Response
+// *Handle Requests Response
 app.handleReqRes = handleReqRes;
 
-// Start the server
+// *Start the server
 app.createServer();

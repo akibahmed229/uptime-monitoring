@@ -3,13 +3,14 @@
  *Description: handler to handle token related routes
  *Author: Ahmed
  */
-// Dependencies
+
+// *Dependencies
 const data = require("../../lib/data.lib");
 const { hash } = require("../../helpers/utilites");
 const { parseJSON } = require("../../helpers/utilites");
 const { createRandomString } = require("../../helpers/utilites");
 
-// Module scaffolding
+// *Module scaffolding
 const handler = {};
 
 handler.tokenHandler = (requestProperties, callback) => {
@@ -22,10 +23,10 @@ handler.tokenHandler = (requestProperties, callback) => {
   }
 };
 
-// Module scaffolding
+// *Module scaffolding
 handler._token = {};
 
-// POST methods
+// *POST methods
 handler._token.post = (requestProperties, callback) => {
   // validitinf the body field
   const phone =
@@ -78,7 +79,7 @@ handler._token.post = (requestProperties, callback) => {
   }
 };
 
-// GET Method
+// *GET Method
 handler._token.get = (requestProperties, callback) => {
   // check the id if its valid
   const id =
@@ -108,7 +109,7 @@ handler._token.get = (requestProperties, callback) => {
   }
 };
 
-// PUT method
+// *PUT method
 handler._token.put = (requestProperties, callback) => {
   // check the id if its valid
   const id =
@@ -159,7 +160,7 @@ handler._token.put = (requestProperties, callback) => {
   }
 };
 
-// DELETE method
+// *DELETE method
 handler._token.delete = (requestProperties, callback) => {
   // check the id if its valid
   const id =

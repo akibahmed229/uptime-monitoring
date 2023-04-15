@@ -3,13 +3,14 @@
  *Description: Route handler to handle user related routes
  *Author: Ahmed
  */
-// Dependencies
+
+// *Dependencies
 const data = require("../../lib/data.lib");
 const { hash } = require("../../helpers/utilites");
 const { parseJSON } = require("../../helpers/utilites");
 const tokenHandler = require("./token.routeHandler");
 
-// Module scaffolding
+// *Module scaffolding
 const handler = {};
 
 handler.userHandler = (requestProperties, callback) => {
@@ -22,10 +23,10 @@ handler.userHandler = (requestProperties, callback) => {
   }
 };
 
-// Module scaffolding
+// *Module scaffolding
 handler._users = {};
 
-// POST methods
+// *POST methods
 handler._users.post = (requestProperties, callback) => {
   // checking the body field is valid
   const firstName =
@@ -96,7 +97,7 @@ handler._users.post = (requestProperties, callback) => {
   }
 };
 
-// GET Method
+// *GET Method
 handler._users.get = (requestProperties, callback) => {
   // check the phone number is valid
   const phone =
@@ -225,7 +226,7 @@ handler._users.put = (requestProperties, callback) => {
   }
 };
 
-// DELETE method
+// *DELETE method
 handler._users.delete = (requestProperties, callback) => {
   // check the phone number is valid
   const phone =
