@@ -4,14 +4,14 @@
  *Author: Ahmed
  */
 
-// Dependencies
+// *Dependencies
 const crypto = require("crypto");
 const environments = require("./environments");
 
-// Module Scaffolding
+// *Module Scaffolding
 const utilities = {};
 
-// parse JSON string to object
+// *parse JSON string to object
 utilities.parseJSON = (jsonString) => {
   let output;
 
@@ -24,7 +24,7 @@ utilities.parseJSON = (jsonString) => {
   return output;
 };
 
-// Hash string
+// *Hash string
 utilities.hash = (str) => {
   if (typeof str === "string" && str.length > 0) {
     let hash = crypto
@@ -36,7 +36,7 @@ utilities.hash = (str) => {
   return false;
 };
 
-// Create random string
+// *Create random string
 utilities.createRandomString = (strLength) => {
   let length = strLength;
   length = typeof strLength === "number" && strLength > 0 ? strLength : false;
@@ -59,5 +59,5 @@ utilities.createRandomString = (strLength) => {
   }
 };
 
-// Export environments module
+// *Export environments module
 module.exports = utilities;

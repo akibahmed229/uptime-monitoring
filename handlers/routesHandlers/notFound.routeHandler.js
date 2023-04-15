@@ -4,7 +4,7 @@
  *Author: Ahmed
  */
 
-// Module scaffolding
+// *Module scaffolding
 const handler = {};
 
 handler.notFoundHandler = (requestProperties, callback) => {

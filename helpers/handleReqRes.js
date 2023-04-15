@@ -4,7 +4,7 @@
  *Author: Ahmed
  */
 
-// Dependencies
+// *Dependencies
 const { StringDecoder } = require("string_decoder");
 const url = require("url");
 const routes = require("../routes/routes.route");
@@ -13,10 +13,10 @@ const {
 } = require("../handlers/routesHandlers/notFound.routeHandler");
 const { parseJSON } = require("../helpers/utilites");
 
-// Module scaffolding
+// *Module scaffolding
 const handler = {};
 
-// Handle Requests Response
+// *Handle Requests Response
 handler.handleReqRes = (req, res) => {
   // request handling
   // get the url and parse it
