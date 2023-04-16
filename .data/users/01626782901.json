@@ -1,1 +1,10 @@
-{"firstName":"yeanur","lastName":"magi","phone":"01626782901","password":"78505d46c59dc35b720931189173acf6935f796ceb7eaed43281bdab7aebc418","tosAgreement":true,"checks":["tb9yzgtlzclnvwllf5hd"]}
+{
+    "firstName": "yeanur",
+    "lastName": "magi",
+    "phone": "01626782901",
+    "password": "78505d46c59dc35b720931189173acf6935f796ceb7eaed43281bdab7aebc418",
+    "tosAgreement": true,
+    "checks": [
+        "tb9yzgtlzclnvwllf5hd"
+    ]
+}

@@ -1,1 +1,7 @@
-{"firstName":"akib","lastName":"ahmed","phone":"01829750007","password":"976b1d853e7984074ebecc464656123b390bdb580e28930b97493ba78fa1be0a","tosAgreement":true}
+{
+    "firstName": "akib",
+    "lastName": "ahmed",
+    "phone": "01829750007",
+    "password": "976b1d853e7984074ebecc464656123b390bdb580e28930b97493ba78fa1be0a",
+    "tosAgreement": true
+}
