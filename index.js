@@ -5,8 +5,8 @@
  */
 
 // *Dependencies
-const server = require("./lib/server");
-const workers = require("./lib/worker");
+const server = require("./lib/server.lib");
+const workers = require("./lib/worker.lib");
 
 // *app object - module scaffolding
 const app = {};
@@ -20,5 +20,3 @@ app.init = () => {
 };
 
 app.init();
-
-// export the app
