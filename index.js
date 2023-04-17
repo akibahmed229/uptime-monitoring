@@ -1,31 +1,24 @@
 /*
- *Title: Uptime Monitoring Application
- *Description: A RESTful application to monitor up or down time  of user defined links
+ *Title: Project Initial file
+ *Description: Initial file to start the node server and workers
  *Author: Ahmed
  */
 
 // *Dependencies
-const http = require("http");
-const { handleReqRes } = require("./helpers/handleReqRes");
-const environment = require("./helpers/environments");
-const data = require("./lib/data.lib");
+const server = require("./lib/server");
+const workers = require("./lib/worker");
 
 // *app object - module scaffolding
 const app = {};
 
-// Testing file system
-// @TODO:
-
-// *Create Server
-app.createServer = () => {
-  const server = http.createServer(app.handleReqRes);
-  server.listen(environment.port, () => {
-    console.log(`listing to http://localhost:${environment.port}`);
-  });
+// *Init function
+app.init = () => {
+  // start the server
+  server.init();
+  // start the workers
+  workers.init();
 };
 
-// *Handle Requests Response
-app.handleReqRes = handleReqRes;
+app.init();
 
-// *Start the server
-app.createServer();
+// export the app

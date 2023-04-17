@@ -234,6 +234,7 @@ handler._check.put = (requestProperties, callback) => {
       ? requestProperties.body.timeoutSeconds
       : false;
 
+  // if id exist
   if (id) {
     if (protocol || url || method || successCodes || timeoutSeconds) {
       data.read("checks", id, (err, checkData) => {
@@ -245,6 +246,7 @@ handler._check.put = (requestProperties, callback) => {
               ? requestProperties.headersObject.token
               : false;
 
+          // Verifying the toke
           tokenHandler._token.verify(
             token,
             checkObject.userPhone,
@@ -310,6 +312,7 @@ handler._check.delete = (requestProperties, callback) => {
       ? requestProperties.queryStringObject.id
       : false;
 
+  // if id exist
   if (id) {
     // lookup the check
     data.read("checks", id, (err, checkData) => {
@@ -339,7 +342,7 @@ handler._check.delete = (requestProperties, callback) => {
                             ? userObject.checks
                             : [];
 
-                        // remove the deleted chekc id from user list of checks
+                        // remove the deleted check id from user list of checks
                         let checkPosition = userChecks.indexOf(id);
 
                         if (checkPosition > -1) {
